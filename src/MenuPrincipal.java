@@ -209,6 +209,16 @@ public class MenuPrincipal extends JFrame{
         JButton homeButton = new JButton("Início");
         JButton gamesButton = new JButton("Jogos");
         JButton profileButton = new JButton("Perfil");
+        profileButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+                    MenuPrincipal edicao = new MenuPrincipal();
+                    edicao.PerfilGameEditor();
+                    setVisible(false);
+
+
+            }
+        });
         JButton friendsButton = new JButton("Amigos");
         navigationMenu.add(homeButton);
         navigationMenu.add(profileButton);
@@ -398,11 +408,7 @@ public class MenuPrincipal extends JFrame{
             setVisible(true);
         }
     
-        public static void main(String[] args) {
-            SwingUtilities.invokeLater(() -> {
-                new PerfilGamerEditor();
-            });
-        }
+       
     }
 
     private void realizarPesquisa() {
