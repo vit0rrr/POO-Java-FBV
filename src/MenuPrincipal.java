@@ -338,7 +338,7 @@ public class MenuPrincipal extends JFrame{
         return sucesso;
         
            
-
+//PAINEL DE EDIÇÃO DE PERFIL//
     }
     public class PerfilGamerEditor extends JFrame {
         private JTextField nickField;
